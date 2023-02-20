@@ -207,3 +207,80 @@ body{
     border-color: #ced4da;
     box-shadow: none;
 }
+.interested_int p{margin-bottom: 0;}
+
+.logo_list_img{
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    display: grid;
+    grid-auto-flow: dense;
+    grid-gap: 1.2rem;
+}
+.main_btn img{max-height: 20px;}
+
+#img_place {height: 575px; position: relative; top: 0; left: 0; padding: 0;}
+
+#img_place div {height: 575px; width: 100%; position: absolute; top: 0; left: 0; -webkit-transition: opacity 1s ease-in-out; -moz-transition: opacity 1s ease-in-out; -o-transition: opacity 1s ease-in-out; transition: opacity 1s ease-in-out; opacity:0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0);}
+
+#img_place div.opaque {opacity:1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=1);}
+
+/*#img1{background: url(http://payload203.cargocollective.com/1/13/431803/6363735/IMG_7208-2_905.jpg) ; background-size: cover;}
+#img2{background: url(http://payload203.cargocollective.com/1/13/431803/6363565/IMG_7841_905.JPG) ; background-size: cover;}*/
+
+#tabs {
+    position: relative;
+    top: 43px;
+    margin: 0 auto;
+    z-index: 999;
+    left: 42px;
+}
+#tabs div {
+    color: #333;
+    background: #dddddd;
+    border: 0;
+    font-size: 18px;
+    padding: 5px 14px;
+    float: left;
+    margin: 0 4px;
+    border-radius: 30px;
+}
+#tabs div:hover {cursor: pointer;}
+#tabs div.act {color:#333; background:#fff;}
+
+.goback_btn{
+    background-color: var(--maincolor);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    color: #333;
+}
+.goback_btn:hover{color: #fff;}
+
+.arrow_img {
+    position: absolute;
+    left: 13rem;
+    top: 2rem;
+    z-index: 3;
+}
+
+.chat_box {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.chat_box svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chet_box-header{
+    top: 15px;
+    left: 15px;
+}
+.logo img{width: 180px;}
+
+.close_icons i{margin: 0 5px;color: #fff;font-size: 20px;}

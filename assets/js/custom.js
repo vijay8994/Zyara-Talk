@@ -14,3 +14,15 @@ $( document ).ready(function() {
             $(this).next( ".networks-5" ).toggleClass( "active" );
     });   
 });
+
+$(document).ready(function() {$('#tabs').on('click', 'div', function() {
+        $('#img_place div').removeClass('opaque');
+        
+        var newImage = $(this).index();
+        
+        $('#img_place div').eq(newImage).addClass('opaque');
+        
+        $('#tabs div').removeClass('act');
+        $(this).addClass('act');
+    });
+});
