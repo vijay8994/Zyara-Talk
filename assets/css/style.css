@@ -251,7 +251,8 @@ body{
     padding: 1rem;
     border-radius: 0.8rem;
     text-decoration: none;
-    color: #333;
+    position: absolute;
+    top: 36%;
 }
 .goback_btn:hover{color: #fff;}
 
@@ -266,7 +267,7 @@ body{
   display: inline-block;
   position: relative;
   width: 100%;
-  padding-bottom: 100%;
+  padding-top: 150px;
   vertical-align: middle;
   overflow: hidden;
 }
@@ -278,9 +279,34 @@ body{
 }
 
 .chet_box-header{
-    top: 15px;
+    top: 10px;
     left: 15px;
+    width: 93%;
 }
 .logo img{width: 180px;}
 
-.close_icons i{margin: 0 5px;color: #fff;font-size: 20px;}
+.close_icons i{margin: 0 7px;color: #fff;font-size: 24px;}
+
+.chatbox-message{
+    position: relative;
+    z-index: 3;
+}
+.chatbox-message .user_profile img{max-width: 70px;}
+.chatbox-message .user_chatbox{
+    background-color: var(--background-grey);
+}
+
+.reply_message{position: relative;z-index: 3;}
+.reply_box {
+    background-color: var(--maincolor);border-radius: 20px 20px 0px 20px;padding: 8px 15px;color: #fff;
+
+}
+.reply_background p{margin-bottom: 0;}
+.send-message p{color: var(--maincolor);}
+
+.chat_box .input_chat input.form-control {height: 50px;}
+.chat_box .chat_btn {height: 40px;width: auto;right: 20px;margin: 0px 0;background-image: none !important;background: transparent;
+    box-shadow: none;color: #c3c9d5 !important;
+}
+
+.my-account-section a{text-decoration: none;padding: 20px 50px;font-size: 18px;display: inline-block;width: auto;}
