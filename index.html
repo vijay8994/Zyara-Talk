@@ -21,30 +21,18 @@
 </header>
 
 
-<div class="main_theme">
-	<div class="color-Palate d-none">
-		<span data-color= "#f4a261" style="background-color: #f4a261;"></span>
-	    <span data-color= "#2a9d8f" style="background-color: #2a9d8f;"></span>
-	    <span data-color= "#457b9d" style="background-color: #457b9d;"></span>
-	    <span data-color= "#f0efeb" style="background-color: #f0efeb;"></span>
-	    <span data-color= "#f77f00" style="background-color: #f77f00;"></span>
-
-	    <h2>TEXT</h2>
-	    <div>
-	        <p>paragraph</p>
-	    </div>
-	</div>
+<div class="main_theme color-Palate">
 
 	<section class="get-started py-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-3 px-0">
-					<h2>Get Started</h2>
+				<div class="col-lg-3 px-0">
+					<h2 class="text-dark fs-4 fw-bold">Get Started</h2>
 					<p>Welcome to our playground! Use our context builder to let us know more information about our company or website.</p>
 					<p>With the provided information, we’ll build training material to plug into our AI model and allow for a simulated human conversation to take place.</p>
 					<p>This conversation can be plugged in directly on to your website, Google Business Listing, Facebook Messenger accunt , and SMS text flows.</p>
 				</div>
-				<div class="col-lg-9 col-md-9">
+				<div class="col-lg-9">
 					<ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
 					  <li class="nav-item" role="presentation">
 					    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Edit context</button>
@@ -55,9 +43,9 @@
 					</ul>
 					<div class="tab-content border p-3 rounded-3" id="pills-tabContent">
 					  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-					  	<div class="d-flex justify-content-end">
+					  	<div class="d-md-flex d-block justify-content-end">
 				  			<div class="save_btn">
-				  				<button type="button" class="btn btn-secondary px-4 py-2"><i class="fas fa-bookmark me-1"></i> Save</button>
+				  				<button type="button" class="btn btn-secondary px-lg-4 px-md-2 py-2"><i class="fas fa-bookmark me-1"></i> Save</button>
 				  			</div>
 			  				<div class="share-button sharer">
 								<button type="button" class="btn btn-secondary share-btn px-4 py-2 ms-3"><i class="fas fa-share-alt"></i> Share</button>
@@ -78,7 +66,7 @@
 				  			</div>
 					  	</div>
 
-					  	<div class="company_tabs mt-5">
+					  	<div class="company_tabs mt-lg-5 mt-3">
 					  		<nav>
 							  <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
 							    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-info-circle" aria-hidden="true"></i> Company Information</button>
@@ -90,42 +78,42 @@
 							</nav>
 							<div class="tab-content py-4" id="nav-tabContent">
 							  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-							  	<h2 class="mb-3 fw-bold">Company Info</h2>
+							  	<h2 class="mb-3 fw-bold text-dark">Company Info</h2>
 							  	<form class="company_infom-form mt-4">
 							  		<div class="row mb-3">
-							  			<div class="col-md-3">
+							  			<div class="col-lg-3 col-md-5">
 							  				<label>Company Name:</label>
 							  			</div>
-							  			<div class="col-md-6">
+							  			<div class="col-lg-6 col-md-7">
 							  				<input type="text" name="" class="form-control" placeholder="Ray and Sons Heating and Air Conditioning">
 							  			</div>
 							  		</div>
 							  		<div class="row mb-3">
-							  			<div class="col-md-3">
+							  			<div class="col-lg-3 col-md-5">
 							  				<label>Phone number:</label>
 							  			</div>
-							  			<div class="col-md-6">
+							  			<div class="col-lg-6 col-md-7">
 							  				<input type="text" name="" class="form-control" placeholder="(229)686-5531">
 							  			</div>
 							  		</div>
 							  		<div class="row mb-3">
-							  			<div class="col-md-3">
+							  			<div class="col-lg-3 col-md-5">
 							  				<label>Company website:</label>
 							  			</div>
-							  			<div class="col-md-6">
+							  			<div class="col-lg-6 col-md-7">
 							  				<input type="text" name="" class="form-control" placeholder="example.com">
 							  			</div>
 							  		</div>
 							  		<div class="row mb-3">
-							  			<div class="col-md-3">
+							  			<div class="col-lg-3 col-md-5">
 							  				<label>Your email:</label>
 							  			</div>
-							  			<div class="col-md-6">
+							  			<div class="col-lg-6 col-md-7">
 							  				<input type="text" name="" class="form-control" placeholder="sample@email.com">
 							  			</div>
 							  		</div>
 
-							  		<div class="d-flex justify-content-end mt-5 pt-5">
+							  		<div class="d-flex justify-content-end mt-lg-5 mt-3 pt-md-5">
 							  			<button type="button" class="btn btn-secondary me-3"><i class="fas fa-chevron-left"></i> Previous</button>
 							  			<button type="button" class="main_btn">Next <i class="fas fa-chevron-right"></i></button>
 							  		</div>
@@ -148,7 +136,111 @@
 					  	</div>
 
 					  </div>
-					  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">Edit logos/color</div>
+					  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+					  	<div class="d-flex justify-content-end">
+				  			<div class="save_btn">
+				  				<button type="button" class="btn btn-secondary px-lg-4 px-md-2 py-2"><i class="fas fa-bookmark me-1"></i> Save</button>
+				  			</div>
+			  				<div class="share-button sharer">
+								<button type="button" class="btn btn-secondary share-btn px-4 py-2 ms-3"><i class="fas fa-share-alt"></i> Share</button>
+								<div class="social top center networks-5">
+								    <a class="fbtn share facebook" href="#"><i class="fab fa-facebook-f"></i></a> 
+								    <a class="fbtn share gplus" href="#"><i class="fab fa-google-plus"></i></a> 
+								    <a class="fbtn share twitter" href="#"><i class="fab fa-twitter"></i></a> 
+								    <a class="fbtn share linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+								</div>
+							</div>
+				  			<div class="select_option ms-2">
+				  				<select class="form-select" aria-label="Default select example">
+								  <option selected="">Use one of our samples</option>
+								  <option value="1">Use one of our samples 2</option>
+								  <option value="2">Use one of our samples 3</option>
+								  <option value="3">Use one of our samples 4</option>
+								</select>
+				  			</div>
+					  	</div>
+					  	<div class="row mt-5">
+					  		<div class="col-lg-4 px-3">
+							  	<div class="design_logo">
+							  		<h3 class="text-dark fs-4 fw-bold">Design</h3>
+							  		<p>Company logo (ideally a square logo)</p>
+							  		<div class="upload_logo text-center mx-auto">
+							  			<img src="assets/images/logo.png" alt="logo" class="img-fluid" width="100">
+							  		</div>
+							  	</div>
+							  	<div class="d-flex justify-content-center my-4">
+							  		<button type="button" class="main_btn me-3">Edit Logo</button>
+						  			<button type="button" class="btn btn-secondary">Remove</button>
+						  		</div>
+						  		<div class="header_color">
+						  			<p>Chat Header Color</p>
+						  			<div class="d-flex align-items-center mb-3">
+						  				<!-- <div class="bg-color rounded-start w-50"></div> -->
+						  				<span class="rounded-start w-50" data-color= "#70cba2" style="background-color: #70cba2;"></span>
+						  				<div class="color_code rounded-end w-50 text-center text-dark">#0B78BB</div>
+						  			</div>
+						  			<a href="" class="text-decoration-none text-primary">+ Add Gradient</a>
+						  		</div>
+					  		</div>
+					  		<div class="col-lg-4">
+					  			<p>Chat icon Color</p>
+					  			<div class="color_1 mb-3 px-2">
+					  				<label class="mb-2">Primary</label>
+					  				<div class="d-flex align-items-center mb-3">
+						  				<span class="rounded-start w-50" data-color= "#70cba2" style="background-color: #70cba2;"></span>
+						  				<div class="color_code rounded-end w-50 text-center">#878BB</div>
+						  			</div>
+					  			</div>
+					  			<div class="color_1 mb-3 px-2">
+					  				<label class="mb-2">Secondary</label>
+					  				<div class="d-flex align-items-center mb-3">
+						  				<span class="rounded-start w-50" data-color= "#0b79b8" style="background-color: #0b79b8;"></span>
+						  				<div class="color_code rounded-end w-50 text-center">#0B78BB</div>
+						  			</div>
+					  			</div>
+					  			<div class="color_1 mb-3 px-2">
+					  				<label class="mb-2">Button Color</label>
+					  				<div class="d-flex align-items-center mb-3">
+						  				<span class="rounded-start w-50" data-color= "#0b79b8" style="background-color: #0b79b8;"></span>
+						  				<div class="color_code rounded-end w-50 text-center">#0B78BB</div>
+						  			</div>
+					  			</div>
+					  			<a href="" class="text-decoration-none text-primary d-inline-block mb-2">+ Add Gradient</a>
+					  			<div class="color_1 mb-3 px-2">
+					  				<label class="mb-2">Button Text Color</label>
+					  				<div class="d-flex align-items-center mb-3">
+						  				<span class="rounded-start w-50 border" data-color= "#ffffff" style="background-color: #ffffff;"></span>
+						  				<div class="color_code rounded-end w-50 text-center">#FFFFFF</div>
+						  			</div>
+					  			</div>
+					  			<!-- <div class="color-Palate">
+									<span data-color= "#f4a261" style="background-color: #f4a261;"></span>
+								    <span data-color= "#2a9d8f" style="background-color: #2a9d8f;"></span>
+								    <span data-color= "#457b9d" style="background-color: #457b9d;"></span>
+								    <span data-color= "#f0efeb" style="background-color: #f0efeb;"></span>
+								    <span data-color= "#f77f00" style="background-color: #f77f00;"></span>
+
+								    <h2>TEXT</h2>
+								    <div>
+								        <p>paragraph</p>
+								    </div>
+								</div> -->
+					  		</div>
+					  		<div class="col-lg-4">
+					  			<p>Select a Chat Icon</p>
+					  			<div class="d-flex">
+					  				<img src="assets/images/live_chat_img.png" alt="chat" class="img-fluid">
+					  				<img src="assets/images/chat_icon_1.jpg" alt="chat" class="img-fluid">
+					  				<img src="assets/images/chat_icon_2.jpg" alt="chat" class="img-fluid">
+					  				<img src="assets/images/chat_icon_3.jpg" alt="chat" class="img-fluid">
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="d-flex justify-content-end mt-5 mb-3">
+				  			<button type="button" class="btn btn-secondary me-3"><i class="fas fa-chevron-left"></i> Previous</button>
+				  			<button type="button" class="main_btn">Next <i class="fas fa-chevron-right"></i></button>
+				  		</div>
+					  </div>
 					</div>
 				</div>
 			</div>
@@ -157,20 +249,20 @@
 
 	<section class="checkout-demo py-5">
 		<div class="container">
-			<h2 class="fw-bold text-center fs-1 mb-5">Check Out Your Personalized Demo Below</h2>
+			<h2 class="fw-bold text-center fs-1 mb-5 text-dark">Check Out Your Personalized Demo Below</h2>
 			<div class="row">
-				<div class="col-md-7">
-					<div class="bg-grey p-5 rounded-4">
-						<div class="d-flex justify-content-between align-items-end mb-5">
+				<div class="col-lg-7">
+					<div class="bg-grey p-xl-5 p-md-4 p-3 rounded-4">
+						<div class="d-flex justify-content-between align-items-end mb-lg-5 mb-md-3 mb-3">
 							<div class="user_profile text-center me-3">
 								<i class="fas fa-robot"></i>
 							</div>
-							<div class="user_chatbox bg-white p-4 rounded-4">
+							<div class="user_chatbox bg-white p-xl-4 p-md-3 rounded-4">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
 							</div>
 						</div>
-						<div class="d-flex justify-content-between align-items-end mb-5">
+						<div class="d-flex justify-content-between align-items-end mb-lg-5 mb-md-3 mb-3">
 							<div class="user_chatbox bg-white p-4 rounded-4">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
@@ -179,7 +271,7 @@
 								<i class="fas fa-user"></i>
 							</div>
 						</div>
-						<div class="d-flex justify-content-between align-items-end mb-5">
+						<div class="d-flex justify-content-between align-items-end mb-lg-5 mb-md-3 mb-3">
 							<div class="user_profile text-center me-3">
 								<i class="fas fa-robot"></i>
 							</div>
@@ -188,7 +280,7 @@
 								tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
 							</div>
 						</div>
-						<div class="d-flex justify-content-between align-items-center">
+						<div class="d-md-flex d-block justify-content-between align-items-center">
 							<div class="button_stock me-3">
 								<button>Reset Chat</button>
 							</div>
@@ -203,7 +295,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-5 text-center interested_int">
+				<div class="col-lg-5 mt-lg-0 mt-4 text-center interested_int">
 					<h3 class="fs-5 fw-bold mb-4">Interested in integrations?</h3>
 					<div class="bg-black rounded-3 p-4 text-start mb-lg-5 mb-md-3">
 						<p class="textLight mb-1"># Display extracted information</p>
@@ -215,7 +307,7 @@
 						<p class="text-white"><span class="text-warning">Value</span> ( <span class="text-success">'Send lead:',</span> Yes )</p>
 						<p class="text-white"><span class="text-warning">Value</span> ( <span class="text-success">'Transcript:',</span> Send full transcript )</p>
 					</div>
-					<h3 class="fs-5 mb-4">Example Integrations</h3>
+					<h3 class="fs-5 mb-4 mt-lg-0 mt-3">Example Integrations</h3>
 					<div class="logo_list_img">
 						<div class="logo_list">
 							<img src="assets/images/logo_img1.jpg" alt="logo" class="img-fluid">
@@ -246,7 +338,7 @@
 	<section class="business_profile py-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 position-relative">
+				<div class="col-lg-4 position-relative">
 					<h3 class="mb-4 fs-5 fw-bold text-center">How we look on Google BusinessProfile</h3>
 					<img src="assets/images/arrow_img.png" alt="arrow_img" class="img-fluid arrow_img">
 					<div id="tabs">
@@ -255,19 +347,19 @@
 					</div>
 					<div id="img_place">
 						<div class="opaque" id="img1">
-							<img src="assets/images/business_profile_img.jpg" alt="busines profile">
+							<img src="assets/images/business_profile_img.jpg" alt="busines profile" class="img-fluid">
 						</div>
 						 
 						<div id="img2">
-							<img src="assets/images/business_profile_img-back.jpg" alt="busines profile">
+							<img src="assets/images/business_profile_img-back.jpg" alt="busines profile" class="img-fluid">
 						</div>
 
 					</div>
 				</div>
-				<div class="col-md-3 me-5 position-relative">
+				<div class="col-lg-4 back_btn position-relative">
 					<a href="" class="goback_btn text-white">Click on the next on the 'x' icon to go back</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<h3 class="mb-4 fs-5 fw-bold text-center">How we look on Google BusinessProfile</h3>
 					<div class="chat_box bg-white rounded-3 shadow">
 					  <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
@@ -291,7 +383,7 @@
 							<div class="user_profile text-center mx-2">
 								<img src="assets/images/logo.png" alt="logo" class="img-fluid">
 							</div>
-							<div class="user_chatbox p-4 rounded-4 me-3">
+							<div class="user_chatbox p-xl-4 p-md-2 rounded-4 me-3">
 								<p class="m-0">Welcome to ZyraTalk! Please click on one of the buttons to get started.</p>
 							</div>
 						</div>
@@ -306,7 +398,7 @@
 							<div class="user_profile text-center mx-2">
 								<img src="assets/images/logo.png" alt="logo" class="img-fluid">
 							</div>
-							<div class="user_chatbox p-4 rounded-4 me-3">
+							<div class="user_chatbox p-xl-4 p-md-2 rounded-4 me-3">
 								<p class="m-0">Welcome to ZyraTalk! Please click on one of the buttons to get started.</p>
 							</div>
 						</div>
@@ -342,7 +434,7 @@
 	<section class="my-account-section py-5">
 		<div class="container">
 			<div class="text-center">
-				<h2 class="fw-bold text-center fs-1 mb-5">Impressd? Let’s get you started!</h2>
+				<h2 class="fw-bold text-center text-dark fs-1 mb-5">Impressd? Let’s get you started!</h2>
 				<a href="" class="main_btn">Set Up My Account</a>
 			</div>
 		</div>
