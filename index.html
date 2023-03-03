@@ -1,505 +1,486 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Zyra Talk</title>
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-	<link href="assets/css/style.css" rel="stylesheet">
-
-</head>
-<body>
-
-<header class="text-center mx-auto">
-	<img src="assets/images/header-img.jpg" alt="" class="img-fluid">
-</header>
-
-
-<div class="main_theme color-Palate">
-
-	<section class="get-started py-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 px-0">
-					<h2 class="text-dark fs-4 fw-bold">Get Started</h2>
-					<p>Welcome to our playground! Use our context builder to let us know more information about our company or website.</p>
-					<p>With the provided information, we’ll build training material to plug into our AI model and allow for a simulated human conversation to take place.</p>
-					<p>This conversation can be plugged in directly on to your website, Google Business Listing, Facebook Messenger accunt , and SMS text flows.</p>
-				</div>
-				<div class="col-lg-9">
-					<ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
-					  <li class="nav-item" role="presentation">
-					    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Edit context</button>
-					  </li>
-					  <li class="nav-item" role="presentation">
-					    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Edit logos/color</button>
-					  </li>
-					</ul>
-					<div class="tab-content border p-3 rounded-3" id="pills-tabContent">
-					  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-					  	<div class="d-md-flex d-block justify-content-end">
-				  			<div class="save_btn">
-				  				<button type="button" class="btn btn-secondary px-lg-4 px-md-2 py-2"><i class="fas fa-bookmark me-1"></i> Save</button>
-				  			</div>
-			  				<div class="share-button sharer">
-								<button type="button" class="btn btn-secondary share-btn px-4 py-2 ms-3"><i class="fas fa-share-alt"></i> Share</button>
-								<div class="social top center networks-5">
-								    <a class="fbtn share facebook" href="#"><i class="fab fa-facebook-f"></i></a> 
-								    <a class="fbtn share gplus" href="#"><i class="fab fa-google-plus"></i></a> 
-								    <a class="fbtn share twitter" href="#"><i class="fab fa-twitter"></i></a> 
-								    <a class="fbtn share linkedin" href="#"><i class="fab fa-linkedin"></i></a>
-								</div>
-							</div>
-				  			<div class="select_option ms-2">
-				  				<select class="form-select" aria-label="Default select example">
-								  <option selected>Use one of our samples</option>
-								  <option value="1">Use one of our samples 2</option>
-								  <option value="2">Use one of our samples 3</option>
-								  <option value="3">Use one of our samples 4</option>
-								</select>
-				  			</div>
-					  	</div>
-
-					  	<div class="company_tabs mt-lg-5 mt-3">
-					  		<nav>
-							  <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-							    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-info-circle" aria-hidden="true"></i> Company Information</button>
-							    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-briefcase"></i> Business Categories</button>
-							    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fas fa-address-card"></i> About Us</button>
-							    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-faq" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa fa-question-circle" aria-hidden="true"></i> Your FAQs</button>
-							    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-goal" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fas fa-comments"></i> Conversation Goal</button>
-							  </div>
-							</nav>
-							<div class="tab-content py-4" id="nav-tabContent">
-							  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-							  	<h2 class="mb-3 fw-bold text-dark">Company Info</h2>
-							  	<form class="company_infom-form mt-4">
-							  		<div class="row mb-3">
-							  			<div class="col-lg-3 col-md-5">
-							  				<label>Company Name:</label>
-							  			</div>
-							  			<div class="col-lg-6 col-md-7">
-							  				<input type="text" name="" class="form-control" placeholder="Ray and Sons Heating and Air Conditioning">
-							  			</div>
-							  		</div>
-							  		<div class="row mb-3">
-							  			<div class="col-lg-3 col-md-5">
-							  				<label>Phone number:</label>
-							  			</div>
-							  			<div class="col-lg-6 col-md-7">
-							  				<input type="text" name="" class="form-control" placeholder="(229)686-5531">
-							  			</div>
-							  		</div>
-							  		<div class="row mb-3">
-							  			<div class="col-lg-3 col-md-5">
-							  				<label>Company website:</label>
-							  			</div>
-							  			<div class="col-lg-6 col-md-7">
-							  				<input type="text" name="" class="form-control" placeholder="example.com">
-							  			</div>
-							  		</div>
-							  		<div class="row mb-3">
-							  			<div class="col-lg-3 col-md-5">
-							  				<label>Your email:</label>
-							  			</div>
-							  			<div class="col-lg-6 col-md-7">
-							  				<input type="text" name="" class="form-control" placeholder="sample@email.com">
-							  			</div>
-							  		</div>
-
-							  		<div class="d-flex justify-content-end mt-lg-5 mt-3 pt-md-5">
-							  			<button type="button" class="btn btn-secondary me-3"><i class="fas fa-chevron-left"></i> Previous</button>
-							  			<button type="button" class="main_btn">Next <i class="fas fa-chevron-right"></i></button>
-							  		</div>
-							  	</form>
-
-							  </div>
-							  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-								  <h2 class="mb-3 fw-bold">Business Categories</h2>
-								</div>
-							  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-							  	<h2 class="mb-3 fw-bold">About Us</h2>
-							   </div>
-							  <div class="tab-pane fade" id="nav-faq" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-							  	<h2 class="mb-3 fw-bold">Your FAQs</h2>
-							  </div>
-							  <div class="tab-pane fade" id="nav-goal" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-							  	<h2 class="mb-3 fw-bold">Conversation Goal</h2>
-							  </div>
-							</div>
-					  	</div>
-
-					  </div>
-					  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-					  	<div class="d-flex justify-content-end">
-				  			<div class="save_btn">
-				  				<button type="button" class="btn btn-secondary px-lg-4 px-md-2 py-2"><i class="fas fa-bookmark me-1"></i> Save</button>
-				  			</div>
-			  				<div class="share-button sharer">
-								<button type="button" class="btn btn-secondary share-btn px-4 py-2 ms-3"><i class="fas fa-share-alt"></i> Share</button>
-								<div class="social top center networks-5">
-								    <a class="fbtn share facebook" href="#"><i class="fab fa-facebook-f"></i></a> 
-								    <a class="fbtn share gplus" href="#"><i class="fab fa-google-plus"></i></a> 
-								    <a class="fbtn share twitter" href="#"><i class="fab fa-twitter"></i></a> 
-								    <a class="fbtn share linkedin" href="#"><i class="fab fa-linkedin"></i></a>
-								</div>
-							</div>
-				  			<div class="select_option ms-2">
-				  				<select class="form-select" aria-label="Default select example">
-								  <option selected="">Use one of our samples</option>
-								  <option value="1">Use one of our samples 2</option>
-								  <option value="2">Use one of our samples 3</option>
-								  <option value="3">Use one of our samples 4</option>
-								</select>
-				  			</div>
-					  	</div>
-					  	<div class="row mt-5">
-					  		<div class="col-lg-4 px-3">
-							  	<div class="design_logo">
-							  		<h3 class="text-dark fs-4 fw-bold">Design</h3>
-							  		<p>Company logo (ideally a square logo)</p>
-							  		<div class="upload_logo text-center mx-auto">
-							  			<img src="assets/images/logo.png" alt="logo" class="img-fluid" width="100">
-							  		</div>
-							  	</div>
-							  	<div class="d-flex justify-content-center my-4">
-							  		<!-- <button type="button" class="main_btn me-3">Edit Logo</button> -->
-							  		<!-- <input type="file" class="main_btn me-3"> -->
-							  		<div class="file-input">
-								      <input type="file" name="file-input" id="file-input"
-								        class="file-input__input"
-								      />
-								      <label class="main_btn file-input__label" for="file-input">
-								        <span>Edit Logo</span></label
-								      >
-								    </div>
-						  			<button type="button" class="btn btn-secondary ms-3">Remove</button>
-
-						  			
-
-						  		</div>
-						  		<div class="header_color">
-						  			<p>Chat Header Color</p>
-						  			<div class="d-flex align-items-center mb-3">
-						  				<!-- <div class="bg-color rounded-start w-50"></div> -->
-						  				<span class="rounded-start w-50" data-color= "#70cba2" style="background-color: #70cba2;"></span>
-						  				<div class="color_code rounded-end w-50 text-center text-dark">#0B78BB</div>
-						  			</div>
-						  			<a href="" class="text-decoration-none text-primary">+ Add Gradient</a>
-						  		</div>
-					  		</div>
-					  		<div class="col-lg-4">
-					  			<p>Chat icon Color</p>
-					  			<div class="color_1 mb-3 px-2 main_color_picker">
-					  				<label class="mb-2">Primary</label>
-					  				<div class="d-flex align-items-center mb-3">
-						  				<input type="color" id="colorpicker" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#70cba2"> 
-
-										<input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#70cba2" id="hexcolor"></input>
-						  			</div>
-					  			</div>
-					  			<div class="color_1 main_color_picker mb-3 px-2">
-					  				<label class="mb-2">Secondary</label>
-					  				<div class="d-flex align-items-center mb-3">
-										<input type="color" id="colorpickerTwo" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#0b79b8"> 
-
-										<input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#0b79b8" id="hexcolorTwo"></input>
-
-						  			</div>
-					  			</div>
-					  			<div class="color_1 mb-3 px-2 main_color_picker">
-					  				<label class="mb-2">Button Color</label>
-					  				<div class="d-flex align-items-center mb-3">
-						  				<!-- <span class="main_bg-color rounded-start w-50" data-color= "#0b79b8" style="background-color: #0b79b8;"></span>
-						  				<div class="color_code rounded-end w-50 text-center">#0B78BB</div> -->
-
-						  				<input type="color" id="colorpickerThree" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#0b79b8"> 
-
-										<input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#0b79b8" id="hexcolorThree"></input>
-
-						  			</div>
-					  			</div>
-					  			<a href="" class="text-decoration-none text-primary d-inline-block mb-2">+ Add Gradient</a>
-					  			<div class="color_1 mb-3 px-2 main_color_picker">
-					  				<label class="mb-2">Button Text Color</label>
-					  				<div class="d-flex align-items-center mb-3">
-						  				<!-- <span class="main_bg-color rounded-start w-50 border" data-color= "#ffffff" style="background-color: #ffffff;"></span>
-						  				<div class="color_code rounded-end w-50 text-center">#FFFFFF</div> -->
-
-						  				<input type="color" id="colorpickerFour" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#FFFFFF"> 
-
-										<input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#FFFFFF" id="hexcolorFour"></input>
-
-						  			</div>
-					  			</div>
-					  			<!-- <div class="color-Palate">
-									<span data-color= "#f4a261" style="background-color: #f4a261;"></span>
-								    <span data-color= "#2a9d8f" style="background-color: #2a9d8f;"></span>
-								    <span data-color= "#457b9d" style="background-color: #457b9d;"></span>
-								    <span data-color= "#f0efeb" style="background-color: #f0efeb;"></span>
-								    <span data-color= "#f77f00" style="background-color: #f77f00;"></span>
-
-								    <h2>TEXT</h2>
-								    <div>
-								        <p>paragraph</p>
-								    </div>
-								</div> -->
-					  		</div>
-					  		<div class="col-lg-4">
-					  			<p>Select a Chat Icon</p>
-					  			<div class="d-flex align-items-center">
-					  				<div class="chat_1 chat_main" style="background-image: linear-gradient(45deg, #087ab6, #00d39e);">
-					  					<img src="assets/images/img-icon1-white.png" alt="chat" class="img-fluid">
-					  				</div>
-					  				<div class="chat_1">
-					  					<img src="assets/images/chat-icon-2.png" alt="chat" class="img-fluid">
-					  				</div>
-					  				<div class="chat_1">
-					  					<img src="assets/images/chat-icon-3.png" alt="chat" class="img-fluid">
-					  				</div>
-					  				<div class="chat_1">
-					  					<img src="assets/images/chat-icon-4.png" alt="chat" class="img-fluid">
-					  				</div>
-					  			</div>
-					  		</div>
-					  	</div>
-					  	<div class="d-flex justify-content-end mt-5 mb-3">
-				  			<button type="button" class="btn btn-secondary me-3"><i class="fas fa-chevron-left"></i> Previous</button>
-				  			<button type="button" class="main_btn">Next <i class="fas fa-chevron-right"></i></button>
-				  		</div>
-					  </div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="checkout-demo py-5">
-		<div class="container">
-			<h2 class="fw-bold text-center fs-1 mb-5 text-dark">Check Out Your Personalized Demo Below</h2>
-			<div class="row">
-				<div class="col-lg-7">
-					<div class="bg-grey p-xl-5 p-md-4 p-3 rounded-4">
-						<div class="d-flex justify-content-between align-items-end mb-lg-5 mb-md-3 mb-3">
-							<div class="user_profile text-center me-3">
-								<i class="fas fa-robot"></i>
-							</div>
-							<div class="user_chatbox bg-white p-xl-4 p-md-3 rounded-4">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-							</div>
-						</div>
-						<div class="d-flex justify-content-between align-items-end mb-lg-5 mb-md-3 mb-3">
-							<div class="user_chatbox bg-white p-4 rounded-4">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-							</div>
-							<div class="user_profile text-center ms-3">
-								<i class="fas fa-user"></i>
-							</div>
-						</div>
-						<div class="d-flex justify-content-between align-items-end mb-lg-5 mb-md-3 mb-3">
-							<div class="user_profile text-center me-3">
-								<i class="fas fa-robot"></i>
-							</div>
-							<div class="user_chatbox bg-white p-4 rounded-4">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-							</div>
-						</div>
-						<div class="d-md-flex d-block justify-content-between align-items-center">
-							<div class="button_stock me-3">
-								<button>Reset Chat</button>
-							</div>
-							<div class="input_chat w-100">
-								<div class="input-group">
-						          <input type="text" class="form-control" placeholder="" aria-describedby="button-addon2">
-						          <div class="input-group-append">
-						            <button class="btn btn-info main_btn chat_btn text-white fs-3" type="button" id="button-addon2"><i class="fab fa-telegram-plane"></i></button>
-						          </div>
-						        </div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-5 mt-lg-0 mt-4 text-center interested_int">
-					<h3 class="fs-5 fw-bold mb-4">Interested in integrations?</h3>
-					<div class="bg-black rounded-3 p-4 text-start mb-lg-5 mb-md-3">
-						<p class="textLight mb-1"># Display extracted information</p>
-						<p class="text-white"><span class="text-warning">Value</span> ( <span class="text-success">'Traffic Source:',</span> Google )</p>
-						<p class="text-white"><span class="text-warning">Value</span> ( <span class="text-success">'Traffic Medium:',</span> Organic )</p>
-						<p class="text-white"><span class="text-warning">Value</span> ( <span class="text-success">'Phone Number:',</span> 602-555-5432 )</p>
-						<p class="text-white"><span class="text-warning">Value</span> ( <span class="text-success">'Email:',</span> Example@gmail.com )</p>
-						<p class="text-white"><span class="text-warning">Value</span> ( <span class="text-success">'Zip Code:',</span> 85001 )</p>
-						<p class="text-white"><span class="text-warning">Value</span> ( <span class="text-success">'Send lead:',</span> Yes )</p>
-						<p class="text-white"><span class="text-warning">Value</span> ( <span class="text-success">'Transcript:',</span> Send full transcript )</p>
-					</div>
-					<h3 class="fs-5 mb-4 mt-lg-0 mt-3">Example Integrations</h3>
-					<div class="logo_list_img">
-						<div class="logo_list">
-							<img src="assets/images/logo_img1.jpg" alt="logo" class="img-fluid">
-						</div>
-						<div class="logo_list">
-							<img src="assets/images/logo_img2.jpg" alt="logo" class="img-fluid">
-						</div>
-						<div class="logo_list">
-							<img src="assets/images/logo_img3.jpg" alt="logo" class="img-fluid">
-						</div>
-						<div class="logo_list">
-							<img src="assets/images/logo_img4.jpg" alt="logo" class="img-fluid">
-						</div>
-						<div class="logo_list">
-							<img src="assets/images/logo_img5.jpg" alt="logo" class="img-fluid">
-						</div>
-						<div class="logo_list">
-							<img src="assets/images/logo_img6.jpg" alt="logo" class="img-fluid">
-						</div>
-					</div>
-					<p class="fw-bold mt-2 mb-4">And so much more...</p>
-					<a href="" class="main_btn integrate_btn text-decoration-none mt-3">Integrate using <img src="assets/images/zapier-logo.png" alt="zapier-logo" class="img-fluid"></a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="business_profile py-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 position-relative">
-					<h3 class="mb-4 fs-5 fw-bold text-center">How we look on Google BusinessProfile</h3>
-
-					<img src="assets/images/arrow_img.png" alt="arrow_img" class="img-fluid arrow_img">
-					<div id="tabs">
-						<div class="act">X</div>
-					    <div>Z</div>
-					</div>
-					<div id="img_place">
-						<div class="opaque" id="img1">
-							<img src="assets/images/business_profile_img.jpg" alt="busines profile" class="img-fluid">
-						</div>
-						 
-						<div id="img2">
-							<img src="assets/images/business_profile_img-back.jpg" alt="busines profile" class="img-fluid">
-						</div>
-
-					</div>
-				</div>
-				<div class="col-lg-4 back_btn position-relative">
-					<a href="" class="goback_btn text-white">Click on the next on the 'x' icon to go back</a>
-				</div>
-				<div class="col-lg-4">
-					<h3 class="mb-4 fs-5 fw-bold text-center">How we look on Google BusinessProfile</h3>
-					<div class="chat_box bg-white rounded-3 shadow yr-preview">
-
-						<header style="background: var(--maincolor);">
-							<div class="yr-logo brand-left">
-								<span class="small-img-logo zy--img">
-									<img src="assets/images/logo.png" alt="logo" class="img-fluid">
-								</span>
-								<div class="brand-name">ZyraTalk</div>
-							</div>
-							<div class="yr-button close_icons d-flex">
-								<span class="yr-nav"><i class="fas fa-redo-alt"></i></span>
-					  			<span class="yr-close"><i class="fas fa-ellipsis-v"></i></span>
-					  			<span class="yr-close"><i class="fas fa-times"></i></span>
-							</div>
-							<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 40%; width: 100%;">
-								<path d="M0.00,49.98 C149.99,150.00 347.35,-22.20 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
-							</svg>
-						</header>
-
-					  <!-- <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
-					    <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:#02c4a1;"></path>
-					  </svg> -->
-
-					  <!-- <div class="chet_box-header position-absolute">
-					  	<div class="d-flex align-items-center justify-content-between">
-					  		<div class="logo">
-					  			<img src="assets/images/zyra-footer-logo.svg" alt="logo" class="img-fluid">
-					  		</div>
-					  		<div class="close_icons">
-					  			<i class="fas fa-redo-alt"></i>
-					  			<i class="fas fa-ellipsis-v"></i>
-					  			<i class="fas fa-times"></i>
-					  		</div>
-					  	</div>
-					  </div> -->
-
-					  <div class="chatbox-message d-flex justify-content-between align-items-end mb-3">
-							<div class="user_profile text-center mx-2">
-								<img src="assets/images/logo.png" alt="logo" class="img-fluid">
-							</div>
-							<div class="user_chatbox p-xl-4 p-md-2 me-3">
-								<p class="m-0">Welcome to ZyraTalk! Please click on one of the buttons to get started.</p>
-							</div>
-						</div>
-						<div class="reply_message d-flex justify-content-end me-3 mb-3">
-							<div class="reply_background text-end">
-								<p class="reply_box">Other</p>
-								<p class="d-block">9:16 AM</p>
-							</div>
-						</div>
-
-						<div class="chatbox-message d-flex justify-content-between align-items-end mb-3">
-							<div class="user_profile text-center mx-2">
-								<img src="assets/images/logo.png" alt="logo" class="img-fluid">
-							</div>
-							<div class="user_chatbox p-xl-4 p-md-2 me-3">
-								<p class="m-0">Welcome to ZyraTalk! Please click on one of the buttons to get started.</p>
-							</div>
-						</div>
-						<div class="reply_message d-flex justify-content-end me-3 mb-3">
-							<div class="reply_background text-end">
-								<p class="reply_box">Other</p>
-								<p class="d-block">9:16 AM</p>
-							</div>
-						</div>
-
-						<div class="send-message d-flex justify-content-center mb-3 pt-3 pb-5">
-							<p class="m-0 text-center">Send a Message...</p>
-						</div>
-
-						<div class="input_chat w-100 border-top mb-3">
-							<div class="input-group mt-3 px-3">
-					          <input type="text" class="form-control" placeholder="Send a message..." aria-describedby="button-addon2">
-					          <div class="input-group-append">
-					            <button class="btn btn-info main_btn chat_btn text-white fs-3" type="button" id="button-addon2">
-					            	<img src="assets/images/smile-emoji.svg" alt="sendChat" class="img-fluid me-1">
-					            	<img src="assets/images/sendChat.png" alt="sendChat" class="img-fluid">
-					            </button>
-					          </div>
-					        </div>
-						</div>
-
-					</div>
-					<div class="live_chat_img text-end mt-3">
-						<img src="assets/images/live_chat_img.png" alt="live_chat_img" class="img-fluid">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="my-account-section py-5">
-		<div class="container">
-			<div class="text-center">
-				<h2 class="fw-bold text-center text-dark fs-1 mb-5">Impressd? Let’s get you started!</h2>
-				<a href="" class="main_btn">Set Up My Account</a>
-			</div>
-		</div>
-	</section>
-</div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/custom.js"></script>
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zyra Talk</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="text-center mx-auto">
+      <img src="assets/images/header-img.jpg" alt="" class="img-fluid">
+    </header>
+    <div class="main_theme color-Palate">
+      <section class="get-started py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 px-0">
+              <h2 class="text-dark fs-4 fw-bold">Get Started</h2>
+              <p>Welcome to our playground! Use our context builder to let us know more information about our company or website.</p>
+              <p>With the provided information, we’ll build training material to plug into our AI model and allow for a simulated human conversation to take place.</p>
+              <p>This conversation can be plugged in directly on to your website, Google Business Listing, Facebook Messenger accunt , and SMS text flows.</p>
+            </div>
+            <div class="col-lg-9">
+              <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Edit context</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Edit logos/color</button>
+                </li>
+              </ul>
+              <div class="tab-content border p-3 rounded-3" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                  <div class="d-md-flex d-block justify-content-end">
+                    <div class="save_btn">
+                      <button type="button" class="btn btn-secondary px-lg-4 px-md-2 py-2">
+                        <i class="fas fa-bookmark me-1"></i> Save </button>
+                    </div>
+                    <div class="share-button sharer">
+                      <button type="button" class="btn btn-secondary share-btn px-4 py-2 ms-3">
+                        <i class="fas fa-share-alt"></i> Share </button>
+                      <div class="social top center networks-5">
+                        <a class="fbtn share facebook" href="#">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="fbtn share gplus" href="#">
+                          <i class="fab fa-google-plus"></i>
+                        </a>
+                        <a class="fbtn share twitter" href="#">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="fbtn share linkedin" href="#">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="select_option ms-2">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Use one of our samples</option>
+                        <option value="1">Use one of our samples 2</option>
+                        <option value="2">Use one of our samples 3</option>
+                        <option value="3">Use one of our samples 4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="company_tabs mt-lg-5 mt-3">
+                    <nav>
+                      <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                          <i class="fa fa-info-circle" aria-hidden="true"></i> Company Information </button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                          <i class="fa fa-briefcase"></i> Business Categories </button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                          <i class="fas fa-address-card"></i> About Us </button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-faq" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                          <i class="fa fa-question-circle" aria-hidden="true"></i> Your FAQs </button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-goal" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                          <i class="fas fa-comments"></i> Conversation Goal </button>
+                      </div>
+                    </nav>
+                    <div class="tab-content py-4" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <h2 class="mb-3 fw-bold text-dark">Company Info</h2>
+                        <form class="company_infom-form mt-4">
+                          <div class="row mb-3">
+                            <div class="col-lg-3 col-md-5">
+                              <label>Company Name:</label>
+                            </div>
+                            <div class="col-lg-6 col-md-7">
+                              <input type="text" name="" class="form-control" placeholder="Ray and Sons Heating and Air Conditioning">
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-lg-3 col-md-5">
+                              <label>Phone number:</label>
+                            </div>
+                            <div class="col-lg-6 col-md-7">
+                              <input type="text" name="" class="form-control" placeholder="(229)686-5531">
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-lg-3 col-md-5">
+                              <label>Company website:</label>
+                            </div>
+                            <div class="col-lg-6 col-md-7">
+                              <input type="text" name="" class="form-control" placeholder="example.com">
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-lg-3 col-md-5">
+                              <label>Your email:</label>
+                            </div>
+                            <div class="col-lg-6 col-md-7">
+                              <input type="text" name="" class="form-control" placeholder="sample@email.com">
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-end mt-lg-5 mt-3 pt-md-5">
+                            <button type="button" class="btn btn-secondary me-3">
+                              <i class="fas fa-chevron-left"></i> Previous </button>
+                            <button type="button" class="main_btn">Next <i class="fas fa-chevron-right"></i>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <h2 class="mb-3 fw-bold">Business Categories</h2>
+                      </div>
+                      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <h2 class="mb-3 fw-bold">About Us</h2>
+                      </div>
+                      <div class="tab-pane fade" id="nav-faq" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <h2 class="mb-3 fw-bold">Your FAQs</h2>
+                      </div>
+                      <div class="tab-pane fade" id="nav-goal" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <h2 class="mb-3 fw-bold">Conversation Goal</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                  <div class="d-flex justify-content-end">
+                    <div class="save_btn">
+                      <button type="button" class="btn btn-secondary px-lg-4 px-md-2 py-2">
+                        <i class="fas fa-bookmark me-1"></i> Save </button>
+                    </div>
+                    <div class="share-button sharer">
+                      <button type="button" class="btn btn-secondary share-btn px-4 py-2 ms-3">
+                        <i class="fas fa-share-alt"></i> Share </button>
+                      <div class="social top center networks-5">
+                        <a class="fbtn share facebook" href="#">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="fbtn share gplus" href="#">
+                          <i class="fab fa-google-plus"></i>
+                        </a>
+                        <a class="fbtn share twitter" href="#">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="fbtn share linkedin" href="#">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="select_option ms-2">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected="">Use one of our samples</option>
+                        <option value="1">Use one of our samples 2</option>
+                        <option value="2">Use one of our samples 3</option>
+                        <option value="3">Use one of our samples 4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-lg-4 px-3">
+                      <div class="design_logo">
+                        <h3 class="text-dark fs-4 fw-bold">Design</h3>
+                        <p>Company logo (ideally a square logo)</p>
+                        <div class="upload_logo text-center mx-auto">
+                          <img src="assets/images/logo.png" alt="logo" class="img-fluid" width="100">
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center my-4">
+                        <!-- <button type="button" class="main_btn me-3">Edit Logo</button> -->
+                        <!-- <input type="file" class="main_btn me-3"> -->
+                        <div class="file-input">
+                          <input type="file" name="file-input" id="file-input" class="file-input__input" />
+                          <label class="main_btn file-input__label" for="file-input">
+                            <span>Edit Logo</span>
+                          </label>
+                        </div>
+                        <button type="button" class="btn btn-secondary ms-3">Remove</button>
+                      </div>
+                      <div class="header_color">
+                        <p>Chat Header Color</p>
+                        <div class="d-flex align-items-center mb-3">
+                          <!-- <div class="bg-color rounded-start w-50"></div> -->
+                          <span class="rounded-start w-50" data-color="#70cba2" style="background-color: #70cba2;"></span>
+                          <div class="color_code rounded-end w-50 text-center text-dark">#0B78BB</div>
+                        </div>
+                        <a href="" class="text-decoration-none text-primary">+ Add Gradient</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <p>Chat icon Color</p>
+                      <div class="color_1 mb-3 px-2 main_color_picker">
+                        <label class="mb-2">Primary</label>
+                        <div class="d-flex align-items-center mb-3">
+                          <input type="color" id="colorpicker" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#70cba2">
+                          <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#70cba2" id="hexcolor"></input>
+                        </div>
+                      </div>
+                      <div class="color_1 main_color_picker mb-3 px-2">
+                        <label class="mb-2">Secondary</label>
+                        <div class="d-flex align-items-center mb-3">
+                          <input type="color" id="colorpickerTwo" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#0b79b8">
+                          <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#0b79b8" id="hexcolorTwo"></input>
+                        </div>
+                      </div>
+                      <div class="color_1 mb-3 px-2 main_color_picker">
+                        <label class="mb-2">Button Color</label>
+                        <div class="d-flex align-items-center mb-3">
+                          <!-- <span class="main_bg-color rounded-start w-50" data-color= "#0b79b8" style="background-color: #0b79b8;"></span><div class="color_code rounded-end w-50 text-center">#0B78BB</div> -->
+                          <input type="color" id="colorpickerThree" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#0b79b8">
+                          <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#0b79b8" id="hexcolorThree"></input>
+                        </div>
+                      </div>
+                      <a href="" class="text-decoration-none text-primary d-inline-block mb-2">+ Add Gradient</a>
+                      <div class="color_1 mb-3 px-2 main_color_picker">
+                        <label class="mb-2">Button Text Color</label>
+                        <div class="d-flex align-items-center mb-3">
+                          <!-- <span class="main_bg-color rounded-start w-50 border" data-color= "#ffffff" style="background-color: #ffffff;"></span><div class="color_code rounded-end w-50 text-center">#FFFFFF</div> -->
+                          <input type="color" id="colorpickerFour" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#FFFFFF">
+                          <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#FFFFFF" id="hexcolorFour"></input>
+                        </div>
+                      </div>
+                      <!-- <div class="color-Palate"><span data-color= "#f4a261" style="background-color: #f4a261;"></span><span data-color= "#2a9d8f" style="background-color: #2a9d8f;"></span><span data-color= "#457b9d" style="background-color: #457b9d;"></span><span data-color= "#f0efeb" style="background-color: #f0efeb;"></span><span data-color= "#f77f00" style="background-color: #f77f00;"></span><h2>TEXT</h2><div><p>paragraph</p></div></div> -->
+                    </div>
+                    <div class="col-lg-4">
+                      <p>Select a Chat Icon</p>
+                      <div class="d-flex align-items-center">
+                        <div class="chat_1 chat_main" style="background-image: linear-gradient(45deg, #087ab6, #00d39e);">
+                          <img src="assets/images/img-icon1-white.png" alt="chat" class="img-fluid">
+                        </div>
+                        <div class="chat_1">
+                          <img src="assets/images/chat-icon-2.png" alt="chat" class="img-fluid">
+                        </div>
+                        <div class="chat_1">
+                          <img src="assets/images/chat-icon-3.png" alt="chat" class="img-fluid">
+                        </div>
+                        <div class="chat_1">
+                          <img src="assets/images/chat-icon-4.png" alt="chat" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end mt-5 mb-3">
+                    <button type="button" class="btn btn-secondary me-3">
+                      <i class="fas fa-chevron-left"></i> Previous </button>
+                    <button type="button" class="main_btn">Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="checkout-demo py-5">
+        <div class="container">
+          <h2 class="fw-bold text-center fs-1 mb-5 text-dark">Check Out Your Personalized Demo Below</h2>
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="bg-grey p-xl-5 p-md-4 p-3 rounded-4">
+                <div class="d-flex justify-content-between align-items-end mb-lg-5 mb-md-3 mb-3">
+                  <div class="user_profile text-center me-3">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <div class="user_chatbox bg-white p-xl-4 p-md-3 rounded-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-end mb-lg-5 mb-md-3 mb-3">
+                  <div class="user_chatbox bg-white p-4 rounded-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  </div>
+                  <div class="user_profile text-center ms-3">
+                    <i class="fas fa-user"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-end mb-lg-5 mb-md-3 mb-3">
+                  <div class="user_profile text-center me-3">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <div class="user_chatbox bg-white p-4 rounded-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  </div>
+                </div>
+                <div class="d-md-flex d-block justify-content-between align-items-center">
+                  <div class="button_stock me-3">
+                    <button>Reset Chat</button>
+                  </div>
+                  <div class="input_chat w-100">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-info main_btn chat_btn text-white fs-3" type="button" id="button-addon2">
+                          <img src="assets/images/sendChat-white.png" alt="send" class="img-fluid">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 mt-lg-0 mt-4 text-center interested_int">
+              <h3 class="fs-5 fw-bold mb-4">Interested in integrations?</h3>
+              <div class="bg-black rounded-3 p-4 text-start mb-lg-5 mb-md-3">
+                <p class="textLight mb-1"># Display extracted information</p>
+                <p class="text-white">
+                  <span class="text-warning">Value</span> ( <span class="text-success">'Traffic Source:',</span> Google )
+                </p>
+                <p class="text-white">
+                  <span class="text-warning">Value</span> ( <span class="text-success">'Traffic Medium:',</span> Organic )
+                </p>
+                <p class="text-white">
+                  <span class="text-warning">Value</span> ( <span class="text-success">'Phone Number:',</span> 602-555-5432 )
+                </p>
+                <p class="text-white">
+                  <span class="text-warning">Value</span> ( <span class="text-success">'Email:',</span> Example@gmail.com )
+                </p>
+                <p class="text-white">
+                  <span class="text-warning">Value</span> ( <span class="text-success">'Zip Code:',</span> 85001 )
+                </p>
+                <p class="text-white">
+                  <span class="text-warning">Value</span> ( <span class="text-success">'Send lead:',</span> Yes )
+                </p>
+                <p class="text-white">
+                  <span class="text-warning">Value</span> ( <span class="text-success">'Transcript:',</span> Send full transcript )
+                </p>
+              </div>
+              <h3 class="fs-5 mb-4 mt-lg-0 mt-3">Example Integrations</h3>
+              <div class="logo_list_img">
+                <div class="logo_list">
+                  <img src="assets/images/logo_img1.jpg" alt="logo" class="img-fluid">
+                </div>
+                <div class="logo_list">
+                  <img src="assets/images/logo_img2.jpg" alt="logo" class="img-fluid">
+                </div>
+                <div class="logo_list">
+                  <img src="assets/images/logo_img3.jpg" alt="logo" class="img-fluid">
+                </div>
+                <div class="logo_list">
+                  <img src="assets/images/logo_img4.jpg" alt="logo" class="img-fluid">
+                </div>
+                <div class="logo_list">
+                  <img src="assets/images/logo_img5.jpg" alt="logo" class="img-fluid">
+                </div>
+                <div class="logo_list">
+                  <img src="assets/images/logo_img6.jpg" alt="logo" class="img-fluid">
+                </div>
+              </div>
+              <p class="fw-bold mt-2 mb-4">And so much more...</p>
+              <a href="" class="main_btn integrate_btn text-decoration-none mt-3">Integrate using <img src="assets/images/zapier-logo.png" alt="zapier-logo" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="business_profile py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 position-relative">
+              <h3 class="mb-4 fs-5 fw-bold text-center">How we look on Google BusinessProfile</h3>
+              <img src="assets/images/arrow_img.png" alt="arrow_img" class="img-fluid arrow_img">
+              <div id="tabs">
+                <div class="act">X</div>
+                <div>Z</div>
+              </div>
+              <div id="img_place">
+                <div class="opaque" id="img1">
+                  <img src="assets/images/business_profile_img.jpg" alt="busines profile" class="img-fluid">
+                </div>
+                <div id="img2">
+                  <img src="assets/images/business_profile_img-back.jpg" alt="busines profile" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 back_btn position-relative">
+              <a href="" class="goback_btn text-white">Click on the next on the 'x' icon to go back</a>
+            </div>
+            <div class="col-lg-4">
+              <h3 class="mb-4 fs-5 fw-bold text-center">How we look on Google BusinessProfile</h3>
+              <div class="chat_box bg-white rounded-3 shadow yr-preview">
+                <header style="background: var(--maincolor);">
+                  <div class="yr-logo brand-left">
+                    <span class="small-img-logo zy--img">
+                      <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                    </span>
+                    <div class="brand-name">ZyraTalk</div>
+                  </div>
+                  <div class="yr-button close_icons d-flex">
+                    <span class="yr-nav">
+                      <i class="fas fa-redo-alt"></i>
+                    </span>
+                    <span class="yr-close">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </span>
+                    <span class="yr-close">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </div>
+                  <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 40%; width: 100%;">
+                    <path d="M0.00,49.98 C149.99,150.00 347.35,-22.20 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
+                  </svg>
+                </header>
+                <!-- <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet"><path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:#02c4a1;"></path></svg> -->
+                <!-- <div class="chet_box-header position-absolute"><div class="d-flex align-items-center justify-content-between"><div class="logo"><img src="assets/images/zyra-footer-logo.svg" alt="logo" class="img-fluid"></div><div class="close_icons"><i class="fas fa-redo-alt"></i><i class="fas fa-ellipsis-v"></i><i class="fas fa-times"></i></div></div></div> -->
+                <div class="chatbox-message d-flex justify-content-between align-items-end mb-3">
+                  <div class="user_profile text-center mx-2">
+                    <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                  </div>
+                  <div class="user_chatbox p-xl-4 p-md-2 me-3">
+                    <p class="m-0">Welcome to ZyraTalk! Please click on one of the buttons to get started.</p>
+                  </div>
+                </div>
+                <div class="reply_message d-flex justify-content-end me-3 mb-3">
+                  <div class="reply_background text-end">
+                    <p class="reply_box">Other</p>
+                    <p class="d-block">9:16 AM</p>
+                  </div>
+                </div>
+                <div class="chatbox-message d-flex justify-content-between align-items-end mb-3">
+                  <div class="user_profile text-center mx-2">
+                    <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                  </div>
+                  <div class="user_chatbox p-xl-4 p-md-2 me-3">
+                    <p class="m-0">Welcome to ZyraTalk! Please click on one of the buttons to get started.</p>
+                  </div>
+                </div>
+                <div class="reply_message d-flex justify-content-end me-3 mb-3">
+                  <div class="reply_background text-end">
+                    <p class="reply_box">Other</p>
+                    <p class="d-block">9:16 AM</p>
+                  </div>
+                </div>
+                <div class="send-message d-flex justify-content-center mb-3 pt-3 pb-5">
+                  <p class="m-0 text-center">Send a Message...</p>
+                </div>
+                <div class="input_chat w-100 border-top mb-3">
+                  <div class="input-group mt-3 px-3">
+                    <input type="text" class="form-control" placeholder="Send a message..." aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-info main_btn chat_btn text-white fs-3" type="button" id="button-addon2">
+                        <img src="assets/images/smile-emoji.svg" alt="sendChat" class="img-fluid me-1">
+                        <img src="assets/images/sendChat.png" alt="sendChat" class="img-fluid">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="live_chat_img text-end mt-3">
+                <img src="assets/images/live_chat_img.png" alt="live_chat_img" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-account-section py-5">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="fw-bold text-center text-dark fs-1 mb-5">Impressd? Let’s get you started!</h2>
+            <a href="" class="main_btn">Set Up My Account</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
 </html>
