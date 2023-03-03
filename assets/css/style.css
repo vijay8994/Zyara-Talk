@@ -29,7 +29,7 @@ body{
     /*color: #fff;*/
     padding: 10px;
 }
-.color-Palate span {
+.color-Palate .main_bg-color {
     height: 35px;
     display: inline-block;
     cursor: pointer;
@@ -218,7 +218,7 @@ body{
     grid-auto-flow: dense;
     grid-gap: 1.2rem;
 }
-.main_btn img{max-height: 20px;}
+.main_btn img{max-height: 28px;}
 
 #img_place {height: 575px; position: relative; top: 0; left: 0; padding: 0;}
 
@@ -270,16 +270,11 @@ body{
   display: inline-block;
   position: relative;
   width: 100%;
-  padding-top: 150px;
+  padding-top: 0px;
   vertical-align: middle;
   overflow: hidden;
 }
-.chat_box svg {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 .chet_box-header{
     top: 10px;
@@ -288,7 +283,7 @@ body{
 }
 .logo img{width: 180px;}
 
-.close_icons i{margin: 0 7px;color: #fff;font-size: 24px;}
+.close_icons i{margin: 0 8px;color: #fff;font-size: 24px;}
 
 .chatbox-message{
     position: relative;
@@ -297,6 +292,7 @@ body{
 .chatbox-message .user_profile img{max-width: 70px;}
 .chatbox-message .user_chatbox{
     background-color: var(--background-grey);
+    border-radius: 1.2em 1.2em 1.2em 0.2em;
 }
 
 .reply_message{position: relative;z-index: 3;}
@@ -308,8 +304,8 @@ body{
 .send-message p{color: var(--maincolor);}
 
 .chat_box .input_chat input.form-control {height: 50px;}
-.chat_box .chat_btn {height: 40px;width: auto;right: 20px;margin: 0px 0;background-image: none !important;background: transparent;
-    box-shadow: none;color: #c3c9d5 !important;
+.chat_box .chat_btn {height: 50px;width: auto;right: 20px;margin: 0px 0;background-image: none !important;background: transparent;
+    box-shadow: none;color: #c3c9d5 !important;line-height: 29px;
 }
 
 .my-account-section a{text-decoration: none;padding: 20px 50px;font-size: 18px;display: inline-block;width: auto;}
@@ -323,6 +319,194 @@ body{
     background: var(--secondary);
 }
 .interested_int p span{height: auto;}
+
+
+
+/*EDIT LOGO CSS*/
+
+.file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 12px;
+  background-color: #4245a8;
+  box-shadow: 0px 4px 8px #b3b3b3;
+}
+.file-input__label span{height: auto;}
+
+
+.color-picker, .color-pickerTwo {
+  background-color: var(--maincolor);
+}
+.color-picker code, .color-pickerTwo code {
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: #f8f9f9;
+  color: #CC0066;
+}
+
+.color-picker [type='color'], .color-pickerTwo [type='color']{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0;
+  width: 170px;
+  height: 33px;
+  border: none;
+  border-bottom-left-radius: var(--bs-border-radius)!important;
+  border-top-left-radius: var(--bs-border-radius)!important;
+}
+
+.color-picker [type='color']::-webkit-color-swatch-wrapper, .color-pickerTwo [type='color']::-webkit-color-swatch-wrapper{
+  padding: 0;
+}
+
+.color-picker [type='color']::-webkit-color-swatch, .color-pickerTwo [type='color']::-webkit-color-swatch{
+  border: none;
+}
+.color-picker label span, .color-pickerTwo label span {
+    position: absolute;
+    right: 0;
+    background: var(--colorCode);
+    height: 2.2rem;
+    line-height: 2.2rem;
+    color: var(--textLight);
+    border-top-right-radius: var(--bs-border-radius)!important;
+    border-bottom-right-radius: var(--bs-border-radius)!important;
+    width: 50%;
+    bottom: 0;
+    text-align: center;
+}
+
+
+.chat_box header {
+    display: flex;
+    align-items: center;
+    height: 110px;
+    justify-content: space-between;
+    padding: 7px 23px 15px 23px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.brand-left {
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.small-img-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%!important;
+    overflow: hidden;
+    border: 1px solid hsla(0,0%,92.5%,.2784313725490196);
+    display: inline-flex;
+    margin-right: 5px;
+    min-width: 50px;
+    align-items: center;
+    background: #fff;
+    justify-content: center;
+}
+.yr-preview .small-img-logo {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+}
+
+.brand-name {
+    margin-left: 0px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 5px;
+    max-width: 200px;
+    align-items: center;
+    display: inline-flex;
+}
+.yr-button {
+    position: relative;
+    z-index: 1;
+}
+.yr-close, .yr-nav {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.yr-preview .yr-close, .yr-preview .yr-nav {
+    font-size: 14px;
+}
+.yr-preview header svg {
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+}
+
+
+.main_color_picker input{
+    width: 50%;
+    padding: 0;
+    height: 33px;
+    /*border-bottom-left-radius: var(--bs-border-radius)!important;
+    border-top-left-radius: var(--bs-border-radius)!important;*/
+    border: 0;
+}
+
+.main_color_picker input[type="text"] {
+    background: var(--colorCode);
+    height: 2.2rem;
+    line-height: 2.2rem;
+    color: var(--textLight);
+    border-top-right-radius: var(--bs-border-radius)!important;
+    border-bottom-right-radius: var(--bs-border-radius)!important;
+    width: 50%;
+    bottom: 0;
+    text-align: center;
+    border: 0;
+}
+.main_color_picker input:focus-visible {outline: none;}
+
+.main_color_picker input[type="text"]:invalid{
+  outline: 2px solid red;
+}
+#colorpicker, #colorpickerTwo, #colorpickerThree, #colorpickerFour{
+    border-radius: 10px;
+}
+
+.chat_1{
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 10px 0;
+    position: relative;  
+}
+
+.chat_1 img{width: 35px;}
+
+
 
 
 @media(max-width: 1400px){
